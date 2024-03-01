@@ -20,7 +20,7 @@ const Navbar = () => {
             href='/'
             className='flex z-40 font-semibold'>
               <div className='flex h-14 items-center justify-between gap-5'>
-              <Image src="/csi-logo.png" alt="CSI Logo" width={30} height={30} />
+              <Image src="/logo.png" alt="Straymate Logo" width={30} height={30} />
               <span className='text-electric-violet-600 '>StrayMate.</span>
               </div>
               
@@ -32,7 +32,7 @@ const Navbar = () => {
           <div className='hidden items-center space-x-4 sm:flex'>
           <>
                               <Link
-                  href='/dashboard'
+                  href='/home'
                   className={buttonVariants({
                     variant: 'ghost',
                     size: 'sm',
@@ -40,20 +40,29 @@ const Navbar = () => {
                   Home
                 </Link>
                 <Link
-                  href='/events'
+                  href='/categories'
                   className={buttonVariants({
                     variant: 'ghost',
                     size: 'sm',
                   })}>
-                  Dashboard
+                  Categories
+                </Link>
+
+                <Link
+                  href='/about'
+                  className={buttonVariants({
+                    variant: 'ghost',
+                    size: 'sm',
+                  })}>
+                    About Us
                 </Link>
                 <Link
-                  href='/team'
+                  href='/blog'
                   className={buttonVariants({
                     variant: 'ghost',
                     size: 'sm',
                   })}>
-                    Feed
+                    Blog
                 </Link>
 
                 <ModeToggle/>
