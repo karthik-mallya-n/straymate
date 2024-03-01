@@ -13,7 +13,7 @@ export default function Hero() {
         A pet can make,<br />
           <span className="text-primary">
           your {" "}
-          <span className=" text-electric-violet-400 underline ">HAPPINESS</span>!
+          <span className=" text-electric-violet-600 underline ">HAPPINESS</span>!
           </span>
         </h1>
         <p className="my-6 text-gray-500 text-m">

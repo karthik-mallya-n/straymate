@@ -11,8 +11,8 @@ import { ModeToggle } from '../ModeToggle'
 
 const Navbar = () => {
 
-  return (
-    <nav className='sticky h-14 inset-x-0 top-0 z-30 w-full border-b border-gray-200 bg-white/75 backdrop-blur-lg transition-all dark:bg-black'>
+  return ( 
+    <nav className='sticky h-14 inset-x-0 top-0 z-30 w-full border-b border-electric-violet-600 bg-white/75 backdrop-blur-lg transition-all dark:bg-black'>
       <MaxWidthWrapper>
         <div className='flex h-14 items-center justify-between border-b border-zinc-200'>
         
@@ -21,7 +21,12 @@ const Navbar = () => {
             className='flex z-40 font-semibold'>
               <div className='flex h-14 items-center justify-between gap-5'>
               <Image src="/logo.png" alt="Straymate Logo" width={30} height={30} />
-              <span className='text-electric-violet-600 '>StrayMate.</span>
+                <div>
+                  Stray
+                <span className='text-electric-violet-600 '>Mate.</span>
+                </div>
+              
+              
               </div>
               
             
@@ -65,7 +70,7 @@ const Navbar = () => {
                     Blog
                 </Link>
 
-                <ModeToggle/>
+            
                 {/* <Button variant="outline" size="icon">
                 <MoonIcon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
                 </Button> */}
